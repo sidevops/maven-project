@@ -16,7 +16,7 @@ pipeline{
 					
 					}
 					
-					}
+					
 					
 					stage('parallel stage'){
 					
@@ -43,13 +43,16 @@ pipeline{
 					
 					
 					}
-					}
 					
 					failFast: true
+					}
+					
+					
 			
 			}
 			
 			}
 			
+			}
 	
 	
