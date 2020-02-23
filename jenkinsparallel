@@ -20,7 +20,7 @@ pipeline{
 					
 					parallel{
 					
-					stage ('scm checkout')
+					stage ('scm print1')
 					
 					{
 						steps{
@@ -31,7 +31,7 @@ pipeline{
 					
 					}
 					
-					stage ('scm checkout')
+					stage ('scm print2')
 					
 					{
 						steps{
