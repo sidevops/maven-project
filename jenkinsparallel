@@ -3,53 +3,49 @@ pipeline{
 			agent any
 			
 			stages{
+			
+			
 					stage ('scm checkout')
 					
 					{
 						steps{
 						
-						git branch: 'master', url: 'https://github.com/sidevops/maven-project.git'
+						echo 'deploy on vm1'
 						}
 					
 					
 					}
-			
-			stage('parallel stage')
-			{
-			parallel{
-			
-			stage ('validate code')
-			
-			{
-			
-				steps{
-				withMaven(jdk: 'localjdk-1.8', maven: 'localmaven') {
-					sh 'mvn validate' 
+					
+					stage('parallel stage')
+					
+					parallel{
+					
+					stage ('scm checkout')
+					
+					{
+						steps{
+						
+						echo 'deploy on vm2'
+						}
+					
+					
 					}
-				
-				}
-			}
-			
-			stage ('test code')
-			{
-			steps{
-			withMaven(jdk: 'localjdk-1.8', maven: 'localmaven') {
-					sh 'mvn test' 
+					
+					stage ('scm checkout')
+					
+					{
+						steps{
+						
+						echo 'deploy on vm2'
+						}
+					
+					
 					}
+					}
+					
 			
 			}
-			
 			}
-			
-			}
-			
-			
-			}
-			
-			
-			}
-	
-	
-}
+			`
 	
 	
