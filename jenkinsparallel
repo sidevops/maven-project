@@ -34,7 +34,7 @@ pipeline{
 			{
 			steps{
 			withMaven(jdk: 'localjdk-1.8', maven: 'localmaven') {
-					sh 'mvn Test' 
+					sh 'mvn test' 
 					}
 			
 			}
