@@ -40,12 +40,12 @@ pipeline{
 			}
 			
 			}
-			
-			}
-			
-			
-			}
 			failFast: true
+			}
+			
+			
+			}
+			
 			
 			}
 	
