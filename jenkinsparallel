@@ -42,18 +42,18 @@ pipeline{
 						}
 					
 					
-					}
+					},
 					
-					
-					}
 					failFast: true
+					}
 					
 					
+			
+			
 			
 			}
 			
 			}
-			
 			}
 	
 	
