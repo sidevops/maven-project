@@ -42,9 +42,10 @@ pipeline{
 			}
 			
 			}
-			failFast: true|false
+			
 			
 			}
+			failFast: true
 			
 			}
 	
