@@ -36,13 +36,14 @@ pipeline{
 					{
 						steps{
 						
-						echo 'deploy on vm2'
+						echo 'deploy on vm3'
 						}
 					
 					
 					}
 					}
 					
+					failFast: true
 			
 			}
 			}
